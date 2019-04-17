@@ -1,8 +1,8 @@
-Developer¡GÃ¹¥K§»
-Version¡GV1.0.8
-BarcodeFormat¡Gcode 39
-LastModifiedDateTime¡G2018-10-20 11:00
-Database¡GMySQL-community-8.0.12.0
+####  Developerï¼šç¾…ä»•å®
+####  Versionï¼šV1.0.8
+####  BarcodeFormatï¼šcode 39
+####  LastModifiedDateTimeï¼š2018-10-20 11:00
+####  Databaseï¼šMySQL-community-8.0.12.0
 
 
-¬î¥Ğ¾÷±ñªÑ¥÷¦³­­¤½¥q ª©Åv©Ò¦³ Copyright c 2018 Chiu-Tian Machinery CO., Ltd. All Rights Reserved
+####  ç§‹ç”°æ©Ÿæ¢°è‚¡ä»½æœ‰é™å…¬å¸ ç‰ˆæ¬Šæ‰€æœ‰ Copyright c 2018 Chiu-Tian Machinery CO., Ltd. All Rights Reserved
