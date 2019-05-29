@@ -2,26 +2,26 @@ CREATE
     ALGORITHM = UNDEFINED 
     DEFINER = `root`@`localhost` 
     SQL SECURITY DEFINER
-VIEW `¬d¸ß·s¼W³f®Æ` AS
+VIEW `ct_warehouse_db`.`æŸ¥è©¢æ–°å¢žè²¨æ–™` AS
     SELECT 
-        `goods`.`goodsID` AS `goodsID`,
-        `goods`.`type` AS `type`,
-        `category`.`categoryName` AS `categoryName`,
-        `category`.`engAlias` AS `engAlias`,
-        `goods`.`spec` AS `spec`,
-        `brand`.`brandName` AS `brandName`,
-        CONCAT(UPPER(`category`.`engAlias`),
+        `ct_warehouse_db`.`goods`.`goodsID` AS `goodsID`,
+        `ct_warehouse_db`.`goods`.`type` AS `type`,
+        `ct_warehouse_db`.`category`.`categoryName` AS `categoryName`,
+        `ct_warehouse_db`.`category`.`engAlias` AS `engAlias`,
+        `ct_warehouse_db`.`goods`.`spec` AS `spec`,
+        `ct_warehouse_db`.`brand`.`brandName` AS `brandName`,
+        CONCAT(UPPER(`ct_warehouse_db`.`category`.`engAlias`),
                 '-',
-                `goods`.`goodsID`) AS `barcode`,
-        `goods`.`quantity` AS `quantity`,
-        `goods`.`remark` AS `remark`,
-        `goods`.`created_date` AS `created_date`,
-        `goods`.`updated_date` AS `updated_date`
+                `ct_warehouse_db`.`goods`.`goodsID`) AS `barcode`,
+        `ct_warehouse_db`.`goods`.`quantity` AS `quantity`,
+        `ct_warehouse_db`.`goods`.`remark` AS `remark`,
+        `ct_warehouse_db`.`goods`.`created_date` AS `created_date`,
+        `ct_warehouse_db`.`goods`.`updated_date` AS `updated_date`
     FROM
-        ((`goods`
-        JOIN `brand`)
-        JOIN `category`)
+        ((`ct_warehouse_db`.`goods`
+        JOIN `ct_warehouse_db`.`brand`)
+        JOIN `ct_warehouse_db`.`category`)
     WHERE
-        ((`goods`.`categoryID` = `category`.`categoryID`)
-            AND (`goods`.`brandID` = `brand`.`brandID`))
-    ORDER BY `goods`.`goodsID`
+        ((`ct_warehouse_db`.`goods`.`categoryID` = `ct_warehouse_db`.`category`.`categoryID`)
+            AND (`ct_warehouse_db`.`goods`.`brandID` = `ct_warehouse_db`.`brand`.`brandID`))
+    ORDER BY `ct_warehouse_db`.`goods`.`goodsID`
