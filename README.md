@@ -42,10 +42,6 @@
 ![alt text](https://github.com/dt9250810/WareHouseManagement/blob/master/images/5-3.png)
 * 含```關鍵字搜尋```、```CRUD```和```匯出.xlsx```功能
 
-### 進出人員管理
-![alt text](https://github.com/dt9250810/WareHouseManagement/blob/master/images/6.png)
-* 含```關鍵字搜尋```、```CRUD```和```匯出.xlsx```功能
-
 
 ####  Developer：Bruce Lo
 ####  Version：V1.0.8
